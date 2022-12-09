@@ -11,7 +11,7 @@ const container = document.querySelector('#root')
 
 ReactDOM.render(
   <React.StrictMode>
-    <Root />
+    <App />
   </React.StrictMode>,
   container // or document.getElementById('root') 
 );
