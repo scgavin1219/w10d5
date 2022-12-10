@@ -1,7 +1,26 @@
 import HarvardArt from './data/harvardArt'
 import GalleryNavigation from './components/GalleryNavigation';
 
-// console.log(HarvardArt);
+
+const App = () => { 
+  return ( 
+    <>
+      <GalleryNavigation galleries={HarvardArt.records} />
+    </>
+  );
+};
+
+
+export default App;
+
+
+
+
+
+
+
+
+
 
 // function App() {
 //   return (
@@ -18,15 +37,3 @@ import GalleryNavigation from './components/GalleryNavigation';
 // 		</div>
 // 	);
 // };
-
-
-const App = ({HarvardArt}) => { 
-  return ( 
-    <>
-      <GalleryNavigation {...HarvardArt.records} />
-    </>
-  );
-};
-
-
-export default App;
